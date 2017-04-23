@@ -56,4 +56,12 @@ Add a new app on Heroku.
     heroku apps:create <new-project>
     git push heroku
 
+Add redis to Heroku.
+
+    heroku addons:create heroku-redis
+
+Add a worker to Heroku.
+
+    heroku ps:scale worker=1
+
 Start making something awesome. 🎉
