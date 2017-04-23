@@ -33,3 +33,10 @@ group :development do
   # custom
   gem 'rubocop', require: false
 end
+
+group :test do
+  # custom
+  gem 'minitest-rails-capybara'
+  gem 'launchy'
+  gem 'simplecov', require: false
+end
