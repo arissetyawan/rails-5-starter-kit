@@ -1,10 +1,12 @@
-# Get a new Rails 5 app set up on Heroku
+# Quickly get a new Rails 5 up and running on Heroku
 
 Including some options I enjoy. Adjust to suit your needs.
 
 - Slim
 - Bootstrap
 - Sidekiq
+
+## Instructions
 
 Navigate to the location of your new project.
 
@@ -40,7 +42,7 @@ Run with foreman.
 
 `foreman start`
 
-## Optional
+### Optional
 
 Create a new repository on Github.
 
@@ -64,4 +66,4 @@ Add a worker to Heroku.
 
     heroku ps:scale worker=1
 
-Start making something awesome. 🎉
+### Start making something awesome. 🎉
