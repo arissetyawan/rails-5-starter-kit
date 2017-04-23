@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'redis'
+gem 'slim'
 
 group :development, :test do
   gem 'byebug', platform: :mri
