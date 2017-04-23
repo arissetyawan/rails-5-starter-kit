@@ -1,24 +1,59 @@
-# README
+# Get a new Rails 5 app set up on Heroku
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Including some options I enjoy. Adjust to suit your needs.
 
-Things you may want to cover:
+- Slim
+- Bootstrap
+- Sidekiq
 
-* Ruby version
+Navigate to the location of your new project.
 
-* System dependencies
+`cd ~/projects/new-project`
 
-* Configuration
+Copy the repo from Github to your local directory.
 
-* Database creation
+`git clone https://github.com/ryanstrickler/rails-5-starter-kit.git`
 
-* Database initialization
+Rename the application folder.
 
-* How to run the test suite
+`mv rails-5-starter-kit new-project`
 
-* Services (job queues, cache servers, search engines, etc.)
+Navigate into the new project folder.
 
-* Deployment instructions
+`cd new-project`
 
-* ...
+Remove the old git information.
+
+`rm -rf .git`
+
+Start a fresh git repository.
+
+    git init
+    git add .
+    git commit -m 'Initial commit'
+
+Install the necessary gems.
+
+`bundle install`
+
+Run with foreman.
+
+`foreman start`
+
+## Optional
+
+Create a new repository on Github.
+
+[https://help.github.com/articles/create-a-repo/](https://help.github.com/articles/create-a-repo/)
+
+Add a remote that points to Github and push your new repo.
+
+    git remote add github https://github.com/<user>/<repo>.git
+    git push -u github master
+
+Add a new app on Heroku.
+
+    heroku apps:create <new-project>
+    git push heroku
+
+Start making something awesome. 🎉
