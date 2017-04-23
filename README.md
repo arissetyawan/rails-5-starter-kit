@@ -44,25 +44,29 @@ Run with foreman.
 
 ### Optional
 
-Create a new repository on Github.
+#### Github
+
+Create a new repository.
 
 [https://help.github.com/articles/create-a-repo/](https://help.github.com/articles/create-a-repo/)
 
-Add a remote that points to Github and push your new repo.
+Add a new remote and push your new code.
 
     git remote add github https://github.com/<user>/<repo>.git
     git push -u github master
 
-Add a new app on Heroku.
+#### Heroku
+
+Add a new app.
 
     heroku apps:create <new-project>
     git push heroku
 
-Add redis to Heroku.
+Add redis.
 
     heroku addons:create heroku-redis
 
-Add a worker to Heroku.
+Add a worker.
 
     heroku ps:scale worker=1
 
