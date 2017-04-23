@@ -2,9 +2,9 @@
 
 Including some options I enjoy. Adjust to suit your needs.
 
-- Slim
-- Bootstrap
-- Sidekiq
+- Sidekiq for jobs
+- Slim for templating
+- Bootstrap as a starting point for stylesheets
 
 ## Instructions
 
