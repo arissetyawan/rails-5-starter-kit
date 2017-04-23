@@ -1,6 +1,6 @@
-ruby '2.4.0'
-
 source 'https://rubygems.org'
+
+ruby '2.4.0'
 
 gem 'rails', '5.0.2'
 gem 'pg'
@@ -17,6 +17,7 @@ gem 'bootstrap', '4.0.0.alpha6'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'dotenv-rails'
 end
 
 group :development do
