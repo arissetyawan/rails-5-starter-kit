@@ -11,12 +11,16 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
-gem 'redis'
+
+# custom
+gem 'sidekiq'
 gem 'slim'
 gem 'bootstrap', '4.0.0.alpha6'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+
+  # custom
   gem 'dotenv-rails'
 end
 
