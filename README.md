@@ -28,6 +28,13 @@ Remove the old git information.
 
 `rm -rf .git`
 
+Find and replace the app name.
+
+    find . -name 'application.rb' -print0 | xargs -0 sed -i "" "s/StarterKit/<AppName>/g"
+    find . -name '*.rb' -print0 | xargs -0 sed -i "" "s/starter_kit/<app_name>/g"
+    find . -name '*.yml' -print0 | xargs -0 sed -i "" "s/starter_kit/<app_name>/g"
+    find . -name '*.yml' -print0 | xargs -0 sed -i "" "s/STARTER_KIT/<APP_NAME>/g"
+
 Start a fresh git repository.
 
     git init
@@ -36,11 +43,12 @@ Start a fresh git repository.
 
 Install the necessary gems.
 
-`bundle install`
+    bundle install
+    gem install foreman
 
 Run with foreman.
 
-`foreman start`
+    foreman start
 
 ### Optional
 
