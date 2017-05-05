@@ -16,6 +16,7 @@ gem 'jbuilder'
 gem 'sidekiq'
 gem 'slim'
 gem 'bootstrap', '4.0.0.alpha6'
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'byebug', platform: :mri
